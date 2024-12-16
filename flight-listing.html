@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+        name="Bienvenue sur le site officiel de l'Aéroport International de Cotonou, Bénin. Retrouvez les horaires des vols, services passagers, informations sur les formalités, accès, parkings et actualités pour un voyage serein"
+        content="AEROPORT DE COTONOU">
+
+    <title>Aeroport de cotonou</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/datetime.css">
+    <link rel="stylesheet" href="assets/css/vendor/calendar/classic.css">
+    <link rel="stylesheet" href="assets/css/vendor/calendar/classic.date.css">
+    <link rel="stylesheet" href="assets/css/vendor/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/ui-autocomplete.css">
+    <link rel="stylesheet" href="assets/css/vendor/sal.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <style>
+        .status-btn {
+            font-family: "Inter", sans-serif;
+            font-size: clamp(13px, 0.833vw, 22px);
+            font-weight: 600;
+            line-height: 150%;
+            letter-spacing: 0.32px;
+            padding: clamp(10px, 0.833vw, 24px) clamp(20px, 1.66vw, 48px);
+            display: flex;
+            justify-content: center;
+            width: fit-content;
+            align-items: center;
+            gap: clamp(5px, 0.42vw, 12px);
+            transition: all 0.5s ease-in-out;
+            border-radius: 10px;
+            border: none;
+            background: #00993c;
+            box-shadow: 4px 4px 10px 0px rgba(77, 115, 252, 0.3);
+            color: #F8F8FF;
+        }
+    </style>
+</head>
+
+<body class="">
+    <!-- Preloader-->
+    <div id="preloader">
+        <div class="loader">
+            <div class="plane">
+                <img src="https://zupimages.net/up/19/34/4820.gif" class="plane-img" alt="">
+            </div>
+            <div class="earth-wrapper">
+                <div class="earth"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Wrapper Start -->
+    <div id="main-wrapper" class="main-wrapper mr-4">
+
+        <!-- Header Area Start -->
+        <header>
+            <nav class="main-menu">
+                <div class="container-fluid">
+                    <div class="main-menu__block">
+                        <div class="main-menu__left">
+
+                            <div class="main-menu__logo">
+                                <a href="index.html">
+                                    <img src="assets/media/logo.png" alt="FlyNow">
+                                </a>
+                            </div>
+
+                            <div class="main-menu__nav">
+                                <ul class="main-menu__list">
+                                    <li><a href="#" class="active">Passager</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Vols & Destinations</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/vols-destinations/arrivees/">Arrivées</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/vols-destinations/departs/">Départs</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/vols-destinations/destinations/">Destinations</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/vols-destinations/compagnies/">Compagnies</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Guide du voyageur</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/guide-du-voyageur/bagages/">Bagages</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/guide-du-voyageur/documents-de-voyage/">Documents de voyage</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/guide-du-voyageur/enregistrement/">Enregistrement</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/guide-du-voyageur/assistance/">Assistance</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/guide-du-voyageur/controle/">Contrôles</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Boutiques et services</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/boutiques-services/salons-vip/">Salon VIP</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/boutiques-services/transport-et-taxis/">Parking</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/boutiques-services/autres-services/">Autres services</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Destination Bénin</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="https://www.voyage-benin.com/">Découvrir le Bénin</a></li>
+                                                    <li><a href="https://www.routard.com/guide/benin/1503/transports.htm">Se déplacer</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/destination-benin/se-loger/">Se loger</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/passagers/destination-benin/se-restaurer/">Se restaurer</a></li>
+                                                    <li><a href="https://tourismbenin.bj/">Tourisme</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Professionnels</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="https://aeroport-de-cotonou.bj/professionnels/fournisseurs/">Fournisseur</a></li>
+                                            <li><a href="https://aeroport-de-cotonou.bj/professionnels/compagnies-aeriennes/">Compagnies aeriennes</a></li>
+                                            <li><a href="https://aeroport-de-cotonou.bj/professionnels/publicitaire/">Regie publicitaire</a></li>
+                                            <li><a href="https://aeroport-de-cotonou.bj/surete/">Titre d'acces</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">L’Aéroport</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="https://aeroport-de-cotonou.bj/aeroport/sab/">LA SAB</a></li>
+                                            <li><a href="#">Les statistiques</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="https://aeroport-de-cotonou.bj/aeroport/tableaux-de-bord/">Tableaux de bord</a></li>
+                                                    <li><a href="https://aeroport-de-cotonou.bj/aeroport/statistiques-mensuelles/">Statistiques mensuelles</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="https://aeroport-de-cotonou.bj/galerie/">Galerie</a></li>
+                                            <li><a href="https://aeroport-de-cotonou.bj/aeroport/contact/">Contact</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="https://aeroport-de-cotonou.bj/aeroport/nos-appels-doffres/">Nos appels d’offres</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="https://aeroport-de-cotonou.bj/sab-carriere/">SAB Carrière</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="main-menu__right">
+                            <a href="#" class="main-menu__search search-toggler d-xl-flex d-none">
+                                <i class="fal fa-search"></i>
+                            </a>
+                            <div class="main-menu-signup__login d-xl-flex d-none">
+                                <a href="login.html" class="main-menu__login">
+                                    Login
+                                </a>
+                                <div class="center_slach d-xl-flex d-none">/</div>
+                                <a href="sign-up.html" class="main-menu__login">
+                                    Signup
+                                </a>
+                            </div>
+                            <a href="#" class="main-menu__toggler mobile-nav__toggler">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Area end -->
+
+        <!-- Hero Banner start -->
+        <section class="hero-banner-1">
+            
+        </section>
+        <!-- Hero Banner End -->
+
+        <!-- Booking Area Start -->
+        <section class="booking mb-20">
+            <div class="">
+                <div class="content mx-lg-5 mb-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+                                <li class="nav-item m-1">
+                                    <a href="#arrv" class="cus-btn primary active" aria-current="true"
+                                        data-bs-toggle="tab">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <g clip-path="url(#clip0_502_1331)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 640 512"><path fill="currentColor" d="M624 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h608c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16M44.81 205.66l88.74 80a62.6 62.6 0 0 0 25.47 13.93l287.6 78.35c26.48 7.21 54.56 8.72 81 1.36c29.67-8.27 43.44-21.21 47.25-35.71c3.83-14.5-1.73-32.71-23.37-54.96c-19.28-19.82-44.35-32.79-70.83-40l-97.51-26.56L282.8 30.22c-1.51-5.81-5.95-10.35-11.66-11.91L206.05.58c-10.56-2.88-20.9 5.32-20.71 16.44l47.92 164.21l-102.2-27.84l-27.59-67.88c-1.93-4.89-6.01-8.57-11.02-9.93L52.72 64.75c-10.34-2.82-20.53 5-20.72 15.88l.23 101.78c.19 8.91 6.03 17.34 12.58 23.25"/></svg>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_502_1331">
+                                                    <rect width="32" height="32" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        Arrivée
+                                    </a>
+                                </li>
+                                <li class="nav-item m-1">
+                                    <a href="#dep" class="cus-btn primary" aria-current="true"
+                                        data-bs-toggle="tab">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <g clip-path="url(#clip0_502_1331)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 640 512"><path fill="currentColor" d="M624 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h608c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16M80.55 341.27c6.28 6.84 15.1 10.72 24.33 10.71l130.54-.18a65.6 65.6 0 0 0 29.64-7.12l290.96-147.65c26.74-13.57 50.71-32.94 67.02-58.31c18.31-28.48 20.3-49.09 13.07-63.65c-7.21-14.57-24.74-25.27-58.25-27.45c-29.85-1.94-59.54 5.92-86.28 19.48l-98.51 49.99l-218.7-82.06a17.8 17.8 0 0 0-18-1.11L90.62 67.29c-10.67 5.41-13.25 19.65-5.17 28.53l156.22 98.1l-103.21 52.38l-72.35-36.47a17.8 17.8 0 0 0-16.07.02L9.91 230.22c-10.44 5.3-13.19 19.12-5.57 28.08z"/></svg>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_502_1331">
+                                                    <rect width="32" height="32" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        Départ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body tab-content">
+                            <!-- Hotel tab Start -->
+                            <div class="tab-pane active" id="hotel">
+                                <form class="mb-3" action="hotel-listing.html" method="post">
+                                    <div class="row align-items-center">
+                                        <div class="col-xxl-10 col-xl-12">
+                                            <div class="booking-info">
+                                                <div>
+                                                    <div class="custom-sel-input-block">
+                                                        <input type="text" class="sel-input auto-input-hotel"
+                                                            id="flight_Destination" placeholder="Destination">
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-line d-xl-flex d-none"></div>
+                                                <div class="d-md-flex justify-content-between d-sm-block">
+                                                    <div class="input-date-picker">
+                                                        <label for="checkIn_19" class="h6 color-medium-gray">Date</label>
+                                                        <input type="text" class="sel-input date_from" id="checkIn_19"
+                                                            placeholder="août 18, 2023">
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-line d-xl-flex d-none"></div>
+                                                <div>
+                                                    <div class="custom-sel-input-block">
+                                                        <div class="h6 color-medium-gray">Heure</div>
+                                                        <div class="room-booking color-black"> <!-- <span
+                                                                class="total-guest">2</span> Guests / <span
+                                                                class="guest-class">Room</span> --> 08h:45
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xxl-2 mt-xxl-0 mt-32">
+                                            <button type="submit" class="cus-btn extra-width">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <!-- Flight Listing Start -->
+                                    <section class="flight-listing-page mb-60">
+                                        <div class="container-fluid" bis_skin_checked="1">
+                                            <div class="row" bis_skin_checked="1">
+                                                <div bis_skin_checked="1">
+
+                                                    <div class="flight-block bg-white light-shadow p-24 br-10 mb-16 sal-animate" data-sal="slide-up"
+                                                        data-sal-duration="800" data-sal-delay="100" data-sal-easing="ease-in-out"
+                                                        bis_skin_checked="1">
+                                                        <div class="flight-area" bis_skin_checked="1">
+                                                            <div class="airline-name" bis_skin_checked="1">
+                                                                <img src="assets/media/flight_icon/icon-1.png" alt="">
+                                                                <div bis_skin_checked="1">
+                                                                    <h5 class="lightest-black mb-8">Turkish Airlines</h5>
+                                                                    <h6 class="dark-gray">Vol : TK 561</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flight-detail" bis_skin_checked="1">
+                                                                <div class="flight-departure" bis_skin_checked="1">
+                                                                    <h5 class="color-black">02:25</h5>
+                                                                    <h5 class="dark-gray text-end">Heure</h5>
+                                                                </div>
+                                                                <div class="d-inline-flex align-items-center gap-8" bis_skin_checked="1">
+                                                                    <div class="from-to text-center" bis_skin_checked="1">
+                                                                        <!-- <h5 class="dark-gray">09/12/2024</h5> -->
+                                                                        <img src="assets/media/icons/route-plan.png" alt="">
+                                                                        <!-- <h6 class="color-black">Date</h6> -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flight-departure" bis_skin_checked="1">
+                                                                    <h5 class="color-black">10:48</h5>
+                                                                    <h5 class="dark-gray">Heure réelle</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flight-button" bis_skin_checked="1">
+                                                                <div class="amount" bis_skin_checked="1">
+                                                                    <h5 class="color-black">Istanbul/ Abidjan</h5>
+                                                                    <h6 class="dark-gray text-end">Provenance</h6>
+                                                                </div>
+                                                                <div class="status-btn" bis_skin_checked="1">Enregistrement en cours</div>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="bg-light-gray mt-2 mb-2">
+                                                        <div class="d-flex justify-content-between align-items-center" bis_skin_checked="1">
+                                                            <h6 class="color-black">09/12/2024</h6>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="flight-block bg-white light-shadow p-24 br-10 mb-16 sal-animate" data-sal="slide-up"
+                                                        data-sal-duration="800" data-sal-delay="100" data-sal-easing="ease-in-out"
+                                                        bis_skin_checked="1">
+                                                        <div class="flight-area" bis_skin_checked="1">
+                                                            <div class="airline-name" bis_skin_checked="1">
+                                                                <img src="assets/media/flight_icon/icon-1.png" alt="">
+                                                                <div bis_skin_checked="1">
+                                                                    <h5 class="lightest-black mb-8">Turkish Airlines</h5>
+                                                                    <h6 class="dark-gray">Vol : TK 561</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flight-detail" bis_skin_checked="1">
+                                                                <div class="flight-departure" bis_skin_checked="1">
+                                                                    <h5 class="color-black">02:25</h5>
+                                                                    <h5 class="dark-gray text-end">Heure</h5>
+                                                                </div>
+                                                                <div class="d-inline-flex align-items-center gap-8" bis_skin_checked="1">
+                                                                    <div class="from-to text-center" bis_skin_checked="1">
+                                                                        <!-- <h5 class="dark-gray">09/12/2024</h5> -->
+                                                                        <img src="assets/media/icons/route-plan.png" alt="">
+                                                                        <!-- <h6 class="color-black">Date</h6> -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flight-departure" bis_skin_checked="1">
+                                                                    <h5 class="color-black">10:48</h5>
+                                                                    <h5 class="dark-gray">Heure réelle</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flight-button" bis_skin_checked="1">
+                                                                <div class="amount" bis_skin_checked="1">
+                                                                    <h5 class="color-black">Istanbul/ Abidjan</h5>
+                                                                    <h6 class="dark-gray text-end">Provenance</h6>
+                                                                </div>
+                                                                <div class="status-btn" bis_skin_checked="1">Enregistrement en cours</div>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="bg-light-gray mt-2 mb-2">
+                                                        <div class="d-flex justify-content-between align-items-center" bis_skin_checked="1">
+                                                            <h6 class="color-black">09/12/2024</h6>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="flight-block bg-white light-shadow p-24 br-10 mb-16 sal-animate" data-sal="slide-up"
+                                                        data-sal-duration="800" data-sal-delay="100" data-sal-easing="ease-in-out"
+                                                        bis_skin_checked="1">
+                                                        <div class="flight-area" bis_skin_checked="1">
+                                                            <div class="airline-name" bis_skin_checked="1">
+                                                                <img src="assets/media/flight_icon/icon-1.png" alt="">
+                                                                <div bis_skin_checked="1">
+                                                                    <h5 class="lightest-black mb-8">Turkish Airlines</h5>
+                                                                    <h6 class="dark-gray">Vol : TK 561</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flight-detail" bis_skin_checked="1">
+                                                                <div class="flight-departure" bis_skin_checked="1">
+                                                                    <h5 class="color-black">02:25</h5>
+                                                                    <h5 class="dark-gray text-end">Heure</h5>
+                                                                </div>
+                                                                <div class="d-inline-flex align-items-center gap-8" bis_skin_checked="1">
+                                                                    <div class="from-to text-center" bis_skin_checked="1">
+                                                                        <!-- <h5 class="dark-gray">09/12/2024</h5> -->
+                                                                        <img src="assets/media/icons/route-plan.png" alt="">
+                                                                        <!-- <h6 class="color-black">Date</h6> -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flight-departure" bis_skin_checked="1">
+                                                                    <h5 class="color-black">10:48</h5>
+                                                                    <h5 class="dark-gray">Heure réelle</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flight-button" bis_skin_checked="1">
+                                                                <div class="amount" bis_skin_checked="1">
+                                                                    <h5 class="color-black">Istanbul/ Abidjan</h5>
+                                                                    <h6 class="dark-gray text-end">Provenance</h6>
+                                                                </div>
+                                                                <div class="status-btn" bis_skin_checked="1">Enregistrement en cours</div>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="bg-light-gray mt-2 mb-2">
+                                                        <div class="d-flex justify-content-between align-items-center" bis_skin_checked="1">
+                                                            <h6 class="color-black">09/12/2024</h6>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="flight-block bg-white light-shadow p-24 br-10 mb-16 sal-animate" data-sal="slide-up"
+                                                        data-sal-duration="800" data-sal-delay="100" data-sal-easing="ease-in-out"
+                                                        bis_skin_checked="1">
+                                                        <div class="flight-area" bis_skin_checked="1">
+                                                            <div class="airline-name" bis_skin_checked="1">
+                                                                <img src="assets/media/flight_icon/icon-1.png" alt="">
+                                                                <div bis_skin_checked="1">
+                                                                    <h5 class="lightest-black mb-8">Turkish Airlines</h5>
+                                                                    <h6 class="dark-gray">Vol : TK 561</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flight-detail" bis_skin_checked="1">
+                                                                <div class="flight-departure" bis_skin_checked="1">
+                                                                    <h5 class="color-black">02:25</h5>
+                                                                    <h5 class="dark-gray text-end">Heure</h5>
+                                                                </div>
+                                                                <div class="d-inline-flex align-items-center gap-8" bis_skin_checked="1">
+                                                                    <div class="from-to text-center" bis_skin_checked="1">
+                                                                        <!-- <h5 class="dark-gray">09/12/2024</h5> -->
+                                                                        <img src="assets/media/icons/route-plan.png" alt="">
+                                                                        <!-- <h6 class="color-black">Date</h6> -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flight-departure" bis_skin_checked="1">
+                                                                    <h5 class="color-black">10:48</h5>
+                                                                    <h5 class="dark-gray">Heure réelle</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flight-button" bis_skin_checked="1">
+                                                                <div class="amount" bis_skin_checked="1">
+                                                                    <h5 class="color-black">Istanbul/ Abidjan</h5>
+                                                                    <h6 class="dark-gray text-end">Provenance</h6>
+                                                                </div>
+                                                                <div class="status-btn" bis_skin_checked="1">Enregistrement en cours</div>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="bg-light-gray mt-2 mb-2">
+                                                        <div class="d-flex justify-content-between align-items-center" bis_skin_checked="1">
+                                                            <h6 class="color-black">09/12/2024</h6>
+                                                        </div>
+                                                    </div>
+                                                    
+
+                                                    
+
+                                                    <!-- End of liste -->
+                                                    
+                                                    <a href="#" class="accordion-button color-primary h5 collapsed" data-bs-toggle="collapse"
+                                                        data-bs-target="#flightDetail" aria-expanded="true">
+                                                    </a>
+                                                    <div class="paginations mt-8" bis_skin_checked="1">
+                                                        <ul class="unstyled">
+                                                            <li class="active"><a href="" class="h6 fw-600 mb-0">1</a></li>
+                                                            <li><a href="" class="h6 fw-600 mb-0">2</a></li>
+                                                            <li><a href="" class="h6 fw-600 mb-0">3</a></li>
+                                                            <li><a href="" class="h6 fw-600 mb-0">4</a></li>
+                                                            <li class="arrow"><a href="" class="h4 fw-600 mb-0"><i
+                                                                        class="far fa-chevron-right"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Flight Listing End -->
+                            </div>
+                            <!-- Hotel tab End -->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Booking Area End -->
+
+
+
+
+
+
+        <!-- Footer Start -->
+        <footer class="bg-white p-40" data-sal="slide-down" data-sal-duration="800" data-sal-delay="100"
+            data-sal-easing="ease-in-out">
+            <div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-32 ">
+                        <a href=""><img src="assets/media/logo.png" alt="" class="mb-16"></a>
+                        <!-- <p class="dark-gray mb-16">Lorem ipsum dolor sit amet consectetur. Aliquet vulputate augue
+                            penatibus in
+                            libero et id aliquam. In ridiculus pretium est velit euismod. </p> -->
+                        <!-- <h6 class="lightest-black mb-8">S'abonner à la newsletter</h6>
+                        <form action="index.html" method="post">
+                            <input type="email" class="form-control" placeholder="Adresse email" name="email">
+                            <button type="submit" class="subscribe">S'inscrire</button>
+                        </form> -->
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-6 mb-lg-0 mb-32">
+                        <h4 class="light-black mb-24">Vols & Destinations</h4>
+                        <div class="our-links">
+                            <ul class="unstyled">
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/passagers/vols-destinations/arrivees/" class="light-black">Arrivées</a>
+                                </li>
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/passagers/vols-destinations/departs/" class="light-black">Départs</a>
+                                </li>
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/passagers/vols-destinations/destinations/" class="light-black">Destinations</a></li>
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/passagers/vols-destinations/compagnies/" class="light-black">Compagnies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-6 mb-lg-0 mb-32">
+                        <h4 class="light-black mb-24">Professionnels</h4>
+                        <div class="our-links">
+                            <ul class="unstyled">
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/professionnels/fournisseurs/" class="light-black">Fournisseurs</a>
+                                </li>
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/professionnels/compagnies-aeriennes/" class="light-black">Compagnies aériennes</a>
+                                </li>
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/professionnels/publicitaire/" class="light-black">Régie publicitaire</a></li>
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/surete/" class="light-black">Titre d’accès</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-6 mb-md-0 mb-32">
+                        <h4 class="light-black mb-24">Aéroport</h4>
+                        <div class="our-links">
+                            <ul class="unstyled">
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/aeroport/sab/" class="light-black">La SAB</a></li>
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/aeroport/tableaux-de-bord/" class="light-black">Tableaux de bord</a></li>
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/aeroport/statistiques-mensuelles/" class="light-black">Statistiques mensuelles</a></li>
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/galerie/" class="light-black">Galerie</a></li>
+                                <li class="mb-16"><a href="https://aeroport-de-cotonou.bj/aeroport/contact/" class="light-black">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <h4 class="light-black mb-16">Contact Us</h4>
+                        <div class="follow-us">
+                            <ul class="unstyled">
+                                <li class="mb-8"><img src="assets/media/icons/location-bk.png" alt="">&nbsp;&nbsp;
+                                    Avenue Jean Paul II
+                                    Cotonou - Bénin </li>
+                                <li class="mb-8 h5 color-primary mt-lg-3"><img src="assets/media/icons/telephone.png"
+                                        alt="">&nbsp;&nbsp;(+229) 95 36 07 51</li>
+                            </ul>
+                        </div>
+                        <div class="social-link mb-32 mt-lg-3">
+                            <ul class="unstyled">
+                                <li><a href="" class="active"><img src="assets/media/icons/instagram.png" alt=""></a>
+                                </li>
+                                <li><a href=""><img src="assets/media/icons/facebook.png" alt=""></a></li>
+                                <li><a href=""><img src="assets/media/icons/linkedin.png" alt=""></a></li>
+                                <li><a href=""><img src="assets/media/icons/twitter.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <p class="light-black">©2024 Aéroport International de Cotonou | Maintenu par IT-NUM</p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End  -->
+
+        <!-- modal-popup area Start  -->
+        <div class="search-popup">
+            <div class="search-popup__overlay search-toggler"></div>
+            <div class="search-popup__content">
+                <form role="search" method="get" class="search-popup__form" action="index.html">
+                    <input type="text" id="search" placeholder="Search Here...">
+                    <button type="submit"><i class="fal fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <!-- search-popup end-->
+    </div>
+
+
+    <!-- Mobile Menu Start -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"></span>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/media/logo.png" alt=""
+                        class="invisible"></a>
+            </div>
+            <div class="mobile-nav__container"></div>
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:example@company.com">example@company.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+12345678">+123 (4567) -890</a>
+                </li>
+            </ul>
+            <!-- <div class="mobile-nav__social">
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      </div> -->
+        </div>
+    </div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/vendor/calendar/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+    <script src="assets/js/vendor/jquery-validator.js"></script>
+    <script src="assets/js/vendor/aksVideoPlayer.js"></script>
+    <script src="assets/js/vendor/tilt.jquery.js"></script>
+    <script src="assets/js/vendor/calendar/picker.js"></script>
+    <script src="assets/js/vendor/calendar/picker.date.js"></script>
+    <script src="assets/js/vendor/autoComplete.js"></script>
+    <script src="assets/js/vendor/jquery.timepicker.min.js"></script>
+    <script src="assets/js/vendor/sal.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- Site Scripts -->
+    <script src="assets/js/date.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html> 
