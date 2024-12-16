@@ -32,6 +32,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
     <style>
+        .swiper-container {
+        pointer-events: auto; /* Permet de ne pas capter d'événements inutiles */
+        }
+
         .status-btn {
             font-family: "Inter", sans-serif;
             font-size: clamp(13px, 0.833vw, 22px);
@@ -1082,16 +1086,22 @@
                                                         <div class="swiper is-slider-bg w-dyn-list">
                                                             <div role="list" class="swiper-wrapper is-slider-bg w-dyn-items">
                                                                 <div role="listitem" class="swiper-slide is-slider-bg w-dyn-item">
-                                                                    <img alt="Ant-Man" src="assets/sab/sab1.jpg" sizes="100vw" class="slider-bg_img"/>
+                                                                    <img alt="Ant-Man" src="assets/sab/sab1.webp" sizes="100vw" class="slider-bg_img"/>
                                                                 </div>
                                                                 <div role="listitem" class="swiper-slide is-slider-bg w-dyn-item">
-                                                                    <img alt="The Hulk" src="assets/sab/sab2.jpg" sizes="100vw" class="slider-bg_img"/>
+                                                                    <img alt="The Hulk" src="assets/sab/sab2.webp" sizes="100vw" class="slider-bg_img"/>
                                                                 </div>
                                                                 <div role="listitem" class="swiper-slide is-slider-bg w-dyn-item">
-                                                                    <img alt="Chip &#x27;n Dale" src="assets/sab/sab3.jpg" sizes="100vw" class="slider-bg_img"/>
+                                                                    <img alt="Chip &#x27;n Dale" src="assets/sab/sab3.webp" sizes="100vw" class="slider-bg_img"/>
                                                                 </div>
                                                                 <div role="listitem" class="swiper-slide is-slider-bg w-dyn-item">
-                                                                    <img alt="Iron Man" src="assets/sab/sab4.jpg" sizes="100vw" class="slider-bg_img"/>
+                                                                    <img alt="Iron Man" src="assets/sab/sab4.webp" sizes="100vw" class="slider-bg_img"/>
+                                                                </div>
+                                                                <div role="listitem" class="swiper-slide is-slider-bg w-dyn-item">
+                                                                    <img alt="Iron Man" src="assets/sab/sab5.webp" sizes="100vw" class="slider-bg_img"/>
+                                                                </div>
+                                                                <div role="listitem" class="swiper-slide is-slider-bg w-dyn-item">
+                                                                    <img alt="Iron Man" src="assets/sab/sab6.webp" sizes="100vw" class="slider-bg_img"/>
                                                                 </div>
                                                             </div>
                                                             
@@ -1139,22 +1149,32 @@
                                                                             <div role="list" class="swiper-wrapper is-slider-thumbs w-dyn-items">
                                                                                 <div role="listitem" class="swiper-slide is-slider-thumbs w-dyn-item">
                                                                                     <div class="slider-thumbs_height">
-                                                                                        <img alt="Ant-Man" src="assets/sab/sab1.jpg" sizes="(max-width: 767px) 30vw, (max-width: 991px) 23vw, 9vw" class="slider-thumbs_img"/>
+                                                                                        <img alt="Ant-Man" src="assets/sab/sab1.webp" sizes="(max-width: 767px) 30vw, (max-width: 991px) 23vw, 9vw" class="slider-thumbs_img"/>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div role="listitem" class="swiper-slide is-slider-thumbs w-dyn-item">
                                                                                     <div class="slider-thumbs_height">
-                                                                                        <img alt="The Hulk" src="assets/sab/sab2.jpg" sizes="(max-width: 767px) 30vw, (max-width: 991px) 23vw, 9vw" class="slider-thumbs_img"/>
+                                                                                        <img alt="The Hulk" src="assets/sab/sab2.webp" sizes="(max-width: 767px) 30vw, (max-width: 991px) 23vw, 9vw" class="slider-thumbs_img"/>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div role="listitem" class="swiper-slide is-slider-thumbs w-dyn-item">
                                                                                     <div class="slider-thumbs_height">
-                                                                                        <img alt="Chip &#x27;n Dale" src="assets/sab/sab3.jpg" sizes="(max-width: 767px) 30vw, (max-width: 991px) 23vw, 9vw" class="slider-thumbs_img"/>
+                                                                                        <img alt="Chip &#x27;n Dale" src="assets/sab/sab3.webp" sizes="(max-width: 767px) 30vw, (max-width: 991px) 23vw, 9vw" class="slider-thumbs_img"/>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div role="listitem" class="swiper-slide is-slider-thumbs w-dyn-item">
                                                                                     <div class="slider-thumbs_height">
-                                                                                        <img alt="Iron Man" src="assets/sab/sab4.jpg" sizes="(max-width: 767px) 30vw, (max-width: 991px) 23vw, 9vw" class="slider-thumbs_img"/>
+                                                                                        <img alt="Iron Man" src="assets/sab/sab4.webp" sizes="(max-width: 767px) 30vw, (max-width: 991px) 23vw, 9vw" class="slider-thumbs_img"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div role="listitem" class="swiper-slide is-slider-thumbs w-dyn-item">
+                                                                                    <div class="slider-thumbs_height">
+                                                                                        <img alt="Iron Man" src="assets/sab/sab5.webp" sizes="(max-width: 767px) 30vw, (max-width: 991px) 23vw, 9vw" class="slider-thumbs_img"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div role="listitem" class="swiper-slide is-slider-thumbs w-dyn-item">
+                                                                                    <div class="slider-thumbs_height">
+                                                                                        <img alt="Iron Man" src="assets/sab/sab6.webp" sizes="(max-width: 767px) 30vw, (max-width: 991px) 23vw, 9vw" class="slider-thumbs_img"/>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1207,7 +1227,11 @@
                                                 slidesPerView: 1,
                                                 speed: 400,
                                                 effect: "fade",
-                                                allowTouchMove: false
+                                                allowTouchMove: false,
+                                                mousewheel: {
+                                                    forceToAxis: false, // Empêche de verrouiller le scroll vertical/horizontal
+                                                    enabled: false, // Désactive complètement le scroll par la souris
+                                                }
                                             });
                             
                                             const thumbsSwiper = new Swiper($(this).find(".swiper.is-slider-thumbs")[0],{
@@ -1215,7 +1239,11 @@
                                                 speed: 600,
                                                 loop: true,
                                                 loopedSlides: 4,
-                                                slideToClickedSlide: true
+                                                slideToClickedSlide: true,
+                                                mousewheel: {
+                                                    forceToAxis: false, // Empêche de verrouiller le scroll vertical/horizontal
+                                                    enabled: false, // Désactive complètement le scroll par la souris
+                                                }
                                             });
                             
                                             const textSwiper = new Swiper($(this).find(".swiper.is-slider-titles")[0],{
@@ -1235,6 +1263,10 @@
                                                 navigation: {
                                                     nextEl: $(this).find(".swiper-next")[0],
                                                     prevEl: $(this).find(".swiper-prev")[0]
+                                                },
+                                                mousewheel: {
+                                                    forceToAxis: false, // Empêche de verrouiller le scroll vertical/horizontal
+                                                    enabled: false, // Désactive complètement le scroll par la souris
                                                 },
                                                 on: {
                                                         slideChange: function () {
@@ -2031,6 +2063,14 @@
         <script src="https://assets.website-files.com/6384f095c99e0a68b9a2ae0e/js/swiper-tricks.7f033afae.js" type="module"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script>
+
+        const swiperContainer = document.querySelector('.swiper-container');
+
+        // Bloque le scroll sur la molette
+        swiperContainer.addEventListener('wheel', (event) => {
+        event.preventDefault(); // Empêche l'action par défaut (le défilement)
+        }, { passive: false });
+
 
         $(".slider-gallery_component").each(function(index) {
             let totalSlides = numberWithZero($(this).find(".swiper-slide.is-slider-thumbs").length);
